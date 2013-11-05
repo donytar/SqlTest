@@ -22,8 +22,6 @@ public class SqlWorker {
         }
     }
 
-
-
     public void showAll() throws SQLException {
         Statement stmt = dataBase.createStatement();
         ResultSet result = stmt.executeQuery("SELECT * FROM pet");
