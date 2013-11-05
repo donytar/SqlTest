@@ -28,7 +28,6 @@ public class SqlWorker {
         Statement stmt = dataBase.createStatement();
         ResultSet result = stmt.executeQuery("SELECT * FROM pet");
 
-        //System.out.println("#");
         while (result.next()) {
             System.out.println(result.getRow() + ". " + result.getString("name")
                     + "\t" + result.getString("owner"));
