@@ -43,7 +43,7 @@ public class SqlWorker {
                 "INSERT INTO pet (name, owner, type, sex) " +
                 "VALUES('%s', '%s', '%s', '%s')", name, owner, type, sex));
     }
-
+// some comment
     public void removeRow(String name, String owner) throws SQLException {
         Statement stmt = dataBase.createStatement();
         stmt.executeUpdate(String.format(
